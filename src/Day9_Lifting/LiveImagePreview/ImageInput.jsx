@@ -1,4 +1,4 @@
-function ImageInput({profile, setProfile}) {
+function ImageInput({profileProp, setProfile}) {
 
     function handleChange(event) {
         const{name, value} = event.target;
@@ -14,7 +14,7 @@ function ImageInput({profile, setProfile}) {
                 type="text"
                 name="name"
                 placeholder="Enter Name"
-                value={profile.name}
+                value={profileProp.name}
                 onChange={handleChange}
                 autoComplete="off"
             /><br/>
@@ -23,7 +23,7 @@ function ImageInput({profile, setProfile}) {
                 type="text"
                 name="title"
                 placeholder="Enter job Title"
-                value={profile.title}
+                value={profileProp.title}
                 onChange={handleChange}
                 autoComplete="off"
             /><br/>
@@ -32,7 +32,7 @@ function ImageInput({profile, setProfile}) {
                 type="text"
                 name="image"
                 placeholder="Enter link for preview"
-                value={profile.image}
+                value={profileProp.image}
                 onChange={handleChange}
             /> <br/>
 
@@ -43,7 +43,7 @@ function ImageInput({profile, setProfile}) {
                 <input 
                     type="checkbox" 
                     name="darkMode"
-                    value={profile.isDarkMode}
+                    value={profileProp.isDarkMode}
                     onChange={(event) => {(
                         setProfile((prevData) => ({
                             ...prevData,

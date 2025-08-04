@@ -10,13 +10,23 @@ function QuickImagePreview() {
         isDarkMode : false
     })
 
+    function handleReset() {
+        setProfile({
+            name: "",
+            title : "",
+            image: "",
+            isDarkMode : false
+        })
+    }
+
     return(
         <div style={{
             display : "flex",
             gap : "10px"
         }}>
-            <ImageInput profile = {profile} setProfile = {setProfile}/>
-            <ImagePreview profile = {profile}/>
+            <ImageInput profileProp = {profile} setProfile = {setProfile}/>
+            {/* <ImagePreview profile = {profile} setProfile = {setProfile}/> */}
+            <ImagePreview profile = {profile} onReset = {handleReset}/>
         </div>
     );
 }
