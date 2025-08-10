@@ -18,9 +18,6 @@ function TimerFixed() {
                 return prev + 1;
             })
         },3000)
-    
-
-        
     }
 
     return(

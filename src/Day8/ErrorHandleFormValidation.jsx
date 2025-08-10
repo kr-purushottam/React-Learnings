@@ -146,12 +146,8 @@ function ErrorHandleFormValidation() {
             </form>
 
             {successMessage && <div style={{marginTop: "20px", color: "green", fontWeight : "bold" }}>{successMessage}</div>}
-        </>
-        
-
-        
+        </> 
     );
 }
-
 
 export default ErrorHandleFormValidation

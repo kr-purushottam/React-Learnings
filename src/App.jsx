@@ -23,12 +23,21 @@ import ErrorHandleFormValidation from "./Day8/ErrorHandleFormValidation"
 import QuickRegisterForm from "./Day8/QuickRegisterForm"
 // import QuickProfilePreview from "./Day9_Lifting/QuickProfilePreview"
 import QuickImagePreview from "./Day9_Lifting/LiveImagePreview/QuickImagePreview"
+import UserFetch from "./Day10_useEffect/UserFetch"
+import UserGrid from "./Day10_useEffect/UserGrid"
+import AxiosUserGrid from "./Day10_useEffect/AxiosUserGrid"
+import UseEffectLogger from "./Day10_useEffect/UseEffectLogger"
+import AbortControlerDemo from "./Day10_useEffect/AbortControlerDemo"
+import TailwindDrill from "./TailwindDrill"
+import SlowFetchWithoutAbort from "./Day10_useEffect/SlowFetchWithoutAbort"
+import Switcher from "./Day10_useEffect/TimerSwitcher/Switcher"
+import LiveSearch from "./Day10_useEffect/LiveSearch/LiveSearch"
 // App.jsx
 
 
 function App() {
     return (
-        <QuickImagePreview/>
+        <LiveSearch/>
     );
 }
 
