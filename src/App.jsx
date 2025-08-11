@@ -32,12 +32,16 @@ import TailwindDrill from "./TailwindDrill"
 import SlowFetchWithoutAbort from "./Day10_useEffect/SlowFetchWithoutAbort"
 import Switcher from "./Day10_useEffect/TimerSwitcher/Switcher"
 import LiveSearch from "./Day10_useEffect/LiveSearch/LiveSearch"
+import MouseTracker from "./Day10_useEffect/MousePositionTracker/MouseTracker"
+import AutoRefreshPosts from "./Day10_useEffect/AutoRefreshData/AutoRefreshPosts "
+import ImageLoader from "./Day10_useEffect/ImageLoaderCancel/ImageLoader"
+import TestStopwatch from "./TestStopwatch"
 // App.jsx
 
 
 function App() {
     return (
-        <LiveSearch/>
+        <TestStopwatch/>
     );
 }
 
